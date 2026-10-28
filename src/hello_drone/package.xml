@@ -4,7 +4,7 @@
   <name>hello_drone</name>
   <version>0.1.0</version>
   <description>Heartbeat publisher for testing the companion computer environment.</description>
-  <maintainer email="ggreat317@gmail.com">ggrea</maintainer>
+  <maintainer email="ggreat317@gmail.com">ggreat317</maintainer>
   <license>MIT</license>
 
   <exec_depend>rclpy</exec_depend>

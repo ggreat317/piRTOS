@@ -12,7 +12,7 @@ setup(
     ],
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='ggrea',
+    maintainer='ggreat317',
     maintainer_email='ggreat317@gmail.com',
     description='Heartbeat publisher for testing the companion computer environment.',
     license='MIT',

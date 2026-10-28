@@ -12,7 +12,7 @@ services:
       - ws_log:/ws/log          # root-owned files into the repo
     stdin_open: true
     tty: true
-    command: sleep infinity
+    command: sleep infinity   # keep the container running so you can exec into it
 
 volumes:
   ws_build:
