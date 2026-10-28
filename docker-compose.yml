@@ -1,0 +1,20 @@
+services:
+  ros:
+    build: .
+    network_mode: host      # DDS discovery needs the host's real network interfaces
+    ipc: host               # lets same-host nodes use shared-memory transport
+    environment:
+      - ROS_DOMAIN_ID=42    # must match the PC (IMPORTANT)
+    volumes:
+      - ./src:/ws/src
+      - ws_build:/ws/build      # named volumes keep colcon output between
+      - ws_install:/ws/install  # container restarts without dumping
+      - ws_log:/ws/log          # root-owned files into the repo
+    stdin_open: true
+    tty: true
+    command: sleep infinity
+
+volumes:
+  ws_build:
+  ws_install:
+  ws_log:
